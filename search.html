@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Ticket</title>
+    <style>
+        body{
+            background-color: rgb(251, 246, 246);
+        }
+        
+        #img1{
+            margin-left: 150px;
+            width: 78%;
+            height: 700px;
+            border: none;
+            border-radius: 10px;
+            position:fixed
+        }
+        .box1{
+            position: absolute;
+            margin-top: 250px;
+            margin-left: 500px;
+            display: flex;
+            flex-direction: row;
+            gap: 25px;
+        }
+        #img2{
+    height: 37px;
+    width: 37px;
+    border: none;
+    border-radius: 50%;
+ }
+ .ctc{
+    color: rgb(82, 14, 159);
+    font-weight: 1000;
+    font-size: 23px;
+    
+ }
+ .bus{
+    position: absolute;
+    margin-top: 310px;
+    margin-left: 550px;
+    color: rgb(67, 64, 64);
+    font-weight: bolder;
+    font-size: 23px;
+ 
+ }
+ #b1{
+    height: 28px;
+    width: 230px;
+    border: 2px solid rgb(73, 72, 75);
+    border-radius: 10px;
+ }
+ .price{
+    position: absolute;
+    margin-top: 370px;
+    margin-left: 630px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+ }
+ #pc{
+    color: black;
+    font-weight: bolder;
+    font-size: 23px;
+ }
+ #rs{
+    color: rgb(2, 2, 216);
+    font-weight: bolder;
+    font-size: 23px;
+ }
+.button{
+    
+    position: absolute;
+    margin-top: 430px;
+    margin-left: 600px;
+    padding: 4px 4px;
+    border-radius: 12px;
+    width: fit-content;
+    background-color: rgb(122, 19, 220);
+    font-size: 30px;
+    font-weight: 800;
+    cursor: pointer;
+    border: 1px solid blue;
+    box-shadow: 0px 0px 5px blue;
+}
+.button:hover{
+    background-color: blue;
+}
+.btn{
+    text-decoration: none;
+    color:beige;
+}
+.logo{
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+   
+}
+.logo-img{
+    height: 3rem;
+    width: 3rem;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+.txt{
+    font-weight: bolder;
+    font-size: 25px;
+    font-style: italic;
+    color: black;
+}
+.tag{
+    position: absolute;
+    margin-top: 52px;
+    margin-left: 930px;
+    padding-left: 8px;
+    padding-right: 8px;
+    background-color: rgb(193, 20, 20);
+    color: rgb(243, 237, 237);
+    font-size: 26px;
+    font-weight: 600;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 18px;
+    
+    
+}
+.para{
+    position: absolute;
+    font-weight: bold;
+    margin-top: 660px;
+    margin-left:580px;
+    color: rgb(42, 40, 40);
+}
+   
+    </style>
+</head>
+<body>  
+       
+
+        <img src="ticket.jpg" alt="" id="img1">
+        <div class="logo">
+            <div class="img"><img src="logo1.jpeg" alt="" class="logo-img"></div>
+            <div class="txt">Travelo</div>
+        </div>
+
+        <div class="box1">
+            <div class="ctc">Cuttack(CTC)</div>
+            <div><img src="img2.jpeg" alt="" id="img2"></div>
+            <div class="ctc">Bhubaneswar(BBSR)</div>
+        </div>
+        <div class="tag">
+            Schedule Your Journey
+        </div>
+        <div class="bus">
+            <label for="#b1" id="slt">Select Bus:</label>
+            <select name="busname" id="b1">
+                
+                <option value="choose" class="option">AVAILABLE BUSES WITH TIME</option>
+                <option value="ctc" class="option">CB09-  VIKRAM- 9.30AM</option>
+                <option value="bbsr" class="option">CB84-  ARYABHATT-  10.00AM</option>
+                <option value="puri" class="option">CB77-  CHANAKYA-  10.40AM</option>
+                <option value="jspur" class="option">CB81-  ADITYA-  11.00AM</option>
+                <option value="jajpur" class="option">CB82-  ARJUN-  12.10PM</option>
+                <option value="bhadrak" class="option">CB16-  JUPITER-  1.00PM</option>
+                <option value="dhenkanal" class="option">CB27-  SATYAM-  2.15PM</option>
+                <option value="sambalpur" class="option">CB44- BAIBHAB-  2.40PM</option>
+                <option value="sambalpur" class="option">CB13-  ARYAN-  3.15PM</option>
+                <option value="sambalpur" class="option">CB60- SAMBHAB-  4.00PM</option>
+                <option value="sambalpur" class="option">CB83-  NISHKARSH-  4.45PM</option>
+                <option value="sambalpur" class="option">CB80-  ASHOKA-  5.10PM</option>
+                <option value="sambalpur" class="option">CB11-  CAPITAL-  6.00PM</option>
+                <option value="sambalpur" class="option">CB39-  KANISKA-  7.10PM</option>
+                <option value="sambalpur" class="option">CB46-  KALINGA-  7.55PM</option>
+                <option value="sambalpur" class="option">CB79-  PARSHURAM-  8.25PM</option>
+                <option value="sambalpur" class="option">CB85-  SHOURYA-  9.00PM</option>
+                
+                </select>
+        </div>
+        <div class="price">
+            <div id="pc">PRICE:</div>
+            <div id="rs">₹50.00</div>
+        </div>
+        <div class="button">
+            <a href="##" class="btn">BOOK TICKET</a>
+        </div>
+        <p class="para"> 
+            © 2024 - Present Travelo. All rights reserved.
+        </p>
+</body>
+</html>
